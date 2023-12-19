@@ -7,8 +7,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family:Poppins;
-    background-color: rgb(194, 121, 121);
+    font-family:'Arial','Times New Roman', Times, serif;
+    background-color: black;
 }
 /* navigation bar */
 nav{
@@ -16,6 +16,9 @@ nav{
     height: 75px;
     color: white;
     width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1;
 }
 label.logo{
     color: white;
@@ -31,7 +34,7 @@ label.logo{
 nav ul{
     float:right;
     margin-right: 300px;
-    margin-top: 22px;
+    margin-top: 31px;
 }
 nav ul li{
     display: inline-block;
@@ -59,16 +62,15 @@ a:hover{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-/* underline effcet nav bar */
+/* underline (red) effcet nav bar */
 a::after{
     content: "";
     height: 3px;
-    width: 100%;
+    width: 0%;
     background: red;
     display: block;
     margin: auto;
     bottom: 0;
-    opacity: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -76,7 +78,7 @@ a::after{
     -o-transition: all 0.5s;
 }
 a:hover::after{
-    opacity: 1;
+    width: 100%;
 }
  /* nav bar resposive */
 .checkbtn{
@@ -92,14 +94,128 @@ a:hover::after{
     display: none;
 } 
 /* end navigation bar */
+
+/* header section */
 .container2{
+    color:white;
     padding: 0 7%;
+    margin-top: 20%;
 }
+.container2 .header p{
+    font-size: 30px;
+}
+.container2 .header h1{
+    font-size: 50px;
+    
+}
+.container2 .header h1 span{
+    color:red;
+}
+div.cv{
+    margin-top: 20px;
+    background: red;
+    width: fit-content;
+    padding: 14px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+div.cv p{
+    font-weight: 900;
+}
+div.cv:hover{
+    background-color: rgba(255, 0, 0, 0.9);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+/* end header section */
 
-/* about section */
-/* end about section */
-
-
+/*-------------about------------- */
+#about{
+    padding: 80px 0;
+    color:gray;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col1{
+    flex-basis: 35%; /*column wdith*/
+}
+.about-col1 img{
+    width: 100%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+.about-col2{
+    flex-basis: 60%;/*column wdith*/
+}
+.about-col2 h1{
+    color: white;
+}
+.titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.titles p{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color:white;
+}
+.titles p.active-link {
+    color: white;
+}
+.titles p:hover{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.titles p::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.titles .active-link::after{
+    width: 90%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:red;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display:block;
+}
 
 /* media query navigation bar */
 @media (max-width: 13840.9px) and (min-width: 2000px){

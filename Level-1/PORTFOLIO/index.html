@@ -29,14 +29,58 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </div>
     <!-- end navigation bar -->
+    </div>
     <main class="container2">
+<!-- header section -->
+        <section id="header">
+            <div class="header">
+                <p>Hello, my name is Heshitha Sandeepa</p>
+                <h1>I'm a <span class="typing"> </span></h1>
+            </div>
+            <div class="cv">
+                <p>Download CV</p>
+            </div>
+        </section>
+<!-- end header section --> 
+
+<!-- about section -->
         <section id="about">
             <div class="about">
-                <p>dsadsa</p>
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="./images/image.png" alt="image">
+                    </div>
+                    <div class="about-col2">
+                        <h1>About Me</h1>
+                        <p>Enthusiastic and dedicated undergraduate software engineering 
+                            student with a strong 
+                            foundation in HTML, CSS, JavaScript, Bootstrap, Python, SQL, and java.</p>
+                        <div class="titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desiging web/app interfaces</li>
+                                <li><span>Web development</span><br>Web application Development</li>
+                                <li><span>App development</span><br>Build Andorid Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022- present</span><br>Bachelor of Software engineer Hornes</li>
+                                <li><span>2022</span><br>Technical collge</li>
+                                <li><span>2006-2019</span><br>G/Gintota Seconday school</li>
+                            </ul>
+                        </div>
+                </div>
             </div>
-    </section>
-</main>
+        </section>
+<!-- end about section -->
+
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
