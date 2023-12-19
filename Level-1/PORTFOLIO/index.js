@@ -1,3 +1,4 @@
+//about me education skills
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -12,9 +13,9 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-// typed animation
+//typed animation
 let typed = new Typed(" .typing",{
-    strings:[" Web Developer","App Developer","UI/UX Designer"],
+    strings:[" Web Developer","App Developer","UI/UX Designer","Software enginner U.G"],
     typespeed:100,
     backSpeed:60,
     loop:true

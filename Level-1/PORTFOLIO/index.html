@@ -10,9 +10,10 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/b92af0f76d.js" crossorigin="anonymous"></script>
     <!-- css style sheet link -->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
 </head>
 <body class="container">
+    <section class="header" id="header">
     <div class="header">
     <!-- navigation bar -->
         <nav>
@@ -23,14 +24,16 @@
             <label class="logo"><span>H</span>eshitha.
             </label>
             <ul>
-                <li><a href="#" class="active underline">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#top" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     <!-- end navigation bar -->
     </div>
+    </section>
     <main class="container2">
 <!-- header section -->
         <section id="header">
@@ -39,7 +42,7 @@
                 <h1>I'm a <span class="typing"> </span></h1>
             </div>
             <div class="cv">
-                <p>Download CV</p>
+                <p><a href="./documents/Denagamage Heshitha Sandeepa.pdf">Download CV</a></p>
             </div>
         </section>
 <!-- end header section --> 
@@ -57,14 +60,14 @@
                             student with a strong 
                             foundation in HTML, CSS, JavaScript, Bootstrap, Python, SQL, and java.</p>
                         <div class="titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links active-link" >Skills</p>
+                            <p class="tab-links" >Education</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>UI/UX</span><br>Desiging web/app interfaces</li>
                                 <li><span>Web development</span><br>Web application Development</li>
                                 <li><span>App development</span><br>Build Andorid Apps</li>
+                                <li><span>UI/UX</span><br>Desiging web/app interfaces</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
@@ -76,10 +79,91 @@
                         </div>
                 </div>
             </div>
+        </div>
         </section>
-<!-- end about section -->
+        <!-- end of about me section -->
 
+<!-- skills section -->
+        <section id="skills">
+            <div class="header">
+                <h1>My Skills</h1>
+            </div>
+            <div class="inner">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="./images/html.png" alt="html" class="skill-icon">
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Aperiam nam dignissimos velit dolore adipisci tempore cupiditate. Nostrum perspiciatis assumenda ipsum ea
+                    ratione tempore provident atque, placeat, alias hic corporis sunt?</p>
+                </div> 
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="./images/css.png" alt="html" class="skill-icon">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Aperiam nam dignissimos velit dolore adipisci tempore cupiditate. Nostrum perspiciatis assumenda ipsum ea
+                    ratione tempore provident atque, placeat, alias hic corporis sunt?</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="./images/bootstrap.png" alt="image" class="skill-icon">
+                        </div>
+                        <h3>BOOTSTRAP</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Aperiam nam dignissimos velit dolore adipisci tempore cupiditate. Nostrum perspiciatis assumenda ipsum ea
+                    ratione tempore provident atque, placeat, alias hic corporis sunt?</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="./images/javascript.png" alt="image" class="skill-icon">
+                        </div>
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Aperiam nam dignissimos velit dolore adipisci tempore cupiditate. Nostrum perspiciatis assumenda ipsum ea
+                    ratione tempore provident atque, placeat, alias hic corporis sunt?</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="./images/python.png" alt="html" class="skill-icon">
+                        </div>
+                        <h3>PYTHON</h3>
+                    </div>
+                    <div class="progress-bar" value="94%">
+                        <div class="progress-line" style="max-width:94%;">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Aperiam nam dignissimos velit dolore adipisci tempore cupiditate. Nostrum perspiciatis assumenda ipsum ea
+                    ratione tempore provident atque, placeat, alias hic corporis sunt?</p>
+                </div> 
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="./images/java.png" alt="java" class="skill-icon">
+                        </div>
+                        <h3>JAVA</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Aperiam nam dignissimos velit dolore adipisci tempore cupiditate. Nostrum perspiciatis assumenda ipsum ea
+                    ratione tempore provident atque, placeat, alias hic corporis sunt?</p>
+                </div> 
+            </div>
+        </section>
+<!--end of skills section -->
     </main>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
 <script src="./index.js"></script>
 </body>
