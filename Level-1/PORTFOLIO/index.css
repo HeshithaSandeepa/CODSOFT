@@ -305,7 +305,7 @@ div.cv:hover{
     color: #fff;
     
 }
-#about h1 span{
+.title-color{
     background-clip: text;
     color: transparent;
     background-image: linear-gradient(to right,red, white);
@@ -799,6 +799,7 @@ footer .footernav ul{
     display: flex;
     justify-content: center;
     list-style: none; 
+    font-family: "Poppins";
 }
 footer .footernav ul li a{
     color:gray;
@@ -820,6 +821,7 @@ footer .footer-bottom{
     padding-bottom: 20px;
     align-items: center;
     text-align: center;
+    font-family: "Poppins";
 }
 
 
