@@ -94,12 +94,31 @@ nav ul li a:hover::after{
     cursor: pointer;
     display: none;
 }
-/* #check{
+#check{
     display: none;
-}  */
+} 
 nav ul li a.active{
     color:white;
 }
+nav ul li a.active::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: red;
+    display: block;
+    margin: auto;
+    bottom: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+nav ul li a.active:hover::after {
+    width: 100%;
+}
+
 /* end navigation bar */
 /***********************************************************
                 header section
@@ -284,6 +303,12 @@ div.cv:hover{
     text-align: center;
     margin-bottom:20px;
     color: #fff;
+    
+}
+#about h1 span{
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right,red, white);
 }
 .row{
     display: flex;
@@ -495,12 +520,20 @@ div.cv:hover{
 }
 #projects .project-pic {
     margin-bottom: 10px;
-    width: 100%;
+    width: 95%;
     height: 60%;
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(199, 194, 194, 0.5);
 }
 #projects .projects-container {
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /*add new section in correct align*/
     display: flex;
     
 }
@@ -612,7 +645,7 @@ div.cv:hover{
     text-align: center;
 }
 .contact-me .contact-details h2{
-    font-size: 36px;
+    font-size: 30px;
 }
 .contact-me .contact-details p{
     font-weight: 300;
@@ -749,7 +782,7 @@ footer .soical-meida{
 }
 footer .soical-meida a{
     text-decoration:none;
-    padding: 11px;
+    padding: 12px;
     background-color: #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -870,6 +903,19 @@ nav ul{
     #check:checked ~ul{
         left:0;
     }
+    nav ul li a.active::after {
+        width:7%;
+    }
+    nav ul li a:hover::after{
+        width: 7%;
+    }
+    nav ul li a.active::after {
+        width: 7%;
+    }
+    nav ul li a.active:hover::after {
+        width: 7%;
+    }
+    
     .container2 .header h1 {
         font-size: 140%;
     }
@@ -903,8 +949,6 @@ nav ul{
         background-color: #000;
         box-shadow: none;
         padding: 0 10px;
-    }
-    #projects .animation-box .project-box{
     }
 }
 @media (max-width: 1024px){
