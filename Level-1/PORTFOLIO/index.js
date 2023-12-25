@@ -72,3 +72,38 @@ document.getElementById('footer-menu').addEventListener('click', function (activ
     }
 });
 
+// animation in each section
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+
+hiddenElements.forEach((el) => {
+    observer.observe(el);
+});
+
+// progress bar
+const progressbar = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('progress-line-after'); 
+        } else {
+            entry.target.classList.remove('progress-line-after'); 
+        }
+    });
+});
+
+const progressbarLines = document.querySelectorAll('.progress-line'); 
+
+progressbarLines.forEach((el) => {
+    progressbar.observe(el); 
+});

@@ -521,12 +521,15 @@ div.cv:hover{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    animation: smootfill 1.5s cubic-bezier(1,0.2,0.2,1) forwards;
-    -webkit-animation: smootfill 1.5s cubic-bezier(1,0.2,0.2,1) forwards;
+}
+.progress-line-after{
+    height:9px;
+    animation: smootfill 2s cubic-bezier(1,0.2,0.2,1) forwards;
+    -webkit-animation: smootfill 2s cubic-bezier(1,0.2,0.2,1) forwards;
 }
 @keyframes smootfill{
     100%{
-        width:100%; 
+        width:100%;
     }
 }
  /* end of skills section */
@@ -892,15 +895,7 @@ footer{
     -o-transform: scale(1.2);
     -webkit-filter: blur(3px);
 }
-.social-media li:nth-child(1):hover:before{
-    box-shadow: 0 0 15px black;
-}
-.social-media li:nth-child(2):hover:before{
-    box-shadow: 0 0 15px #1DA1F2;
-}
-.social-media li:nth-child(3):hover:before{
-    box-shadow: 0 0 15px #E1306C;
-}
+
 .social-media li:nth-child(1):hover{
     color:  black;
     box-shadow: 0 0 15px white;
@@ -908,7 +903,7 @@ footer{
 }
 .social-media li:nth-child(2):hover{
     color: #0077b5;
-    box-shadow: 0 0 15px #0077b5; 
+    box-shadow: 0 0 15px 6px #0077b5;
     text-shadow: 0 0 15px #0077b5;
 }
 .social-media li:nth-child(3):hover{
@@ -945,23 +940,14 @@ footer .footer-bottom{
     font-family: "Poppins";
 }
 
-/* CSS */
-.animate-up {
+.hidden{
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: all 2s;
+    
 }
-
-.animate-down {
+.show{
     opacity: 1;
-    transform: translateY(-50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    -webkit-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    -moz-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    -ms-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    -o-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
-
 /* -------------------end footer------------------------------*/
 
 /* media query */
@@ -989,6 +975,15 @@ footer .footer-bottom{
         min-height: 30vh;
     }
     
+}
+@media (max-width: 1233.9px) and (min-width: 1025px){
+    label.logo {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    nav ul{
+        margin-right: 10%;
+    }
 }
 @media (max-width: 1024px){
     label.logo{
@@ -1023,7 +1018,8 @@ footer .footer-bottom{
     }
 }
 
-@media (max-width: 852px){
+@media (max-width: 852.9px){
+    
     .checkbtn{
         display: block;
     }
@@ -1037,7 +1033,7 @@ nav ul{
         width: 100%;
         height: 200vh;
         background: #000;
-        top:50px;
+        top:40px;
         text-align: center;
         left:100%;
         transition: all .5s;
@@ -1071,6 +1067,21 @@ nav ul{
     
     .container2 .header h1 {
         font-size: 140%;
+    }
+    .header{
+        display: block;
+    }
+    div.cv{
+        margin-left: 25%;
+    }
+    .second-col{
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .third-col{
+        display: none;
     }
     .about-col1 img{
         display: none;
@@ -1109,6 +1120,13 @@ nav ul{
     #skills .inner{
         grid-template-columns:repeat(2,1fr) ;
         padding: 2rem 50px;
+    }
+}
+
+@media (max-width:952.9px) and (min-width: 853.1px){
+    nav ul{
+        font-size:10%;
+        margin-right: -0%;
     }
 }
 @media (max-width: 800px){
