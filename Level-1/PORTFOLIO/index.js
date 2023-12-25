@@ -8,18 +8,18 @@ let typed = new Typed(" .typing",{
 })
 
 // form email input validate
-function validateForm() {
-    let emailInput = document.getElementById('email');
-    let emailError = document.getElementById('emailError');
+// function validateForm() {
+//     let emailInput = document.getElementById('email');
+//     let emailError = document.getElementById('emailError');
     
-    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
-    if (!emailRegex.test(emailInput.value)) {
-        emailError.innerHTML = 'Please enter a valid email address.';
-    } else {
-        emailError.innerHTML = '';
-    }
-}
+//     if (!emailRegex.test(emailInput.value)) {
+//         emailError.innerHTML = 'Please enter a valid email address.';
+//     } else {
+//         emailError.innerHTML = '';
+//     }
+// }
 
 document.getElementById('menu').addEventListener('click', function (activelink) {
     activelink.preventDefault();

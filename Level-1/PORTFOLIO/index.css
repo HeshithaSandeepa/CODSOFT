@@ -541,7 +541,10 @@ div.cv:hover{
     justify-content: center;
     flex-wrap: wrap; /*add new section in correct align*/
     display: flex;
-    
+}
+
+.project-box .projects-links{
+    margin-top: 10px;
 }
 #projects .animation-box .project-box {
     position: relative;

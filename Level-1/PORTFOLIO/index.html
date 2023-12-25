@@ -16,11 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="container">
-    <!-- preloader animation -->
-    <div class="center">
-        <div class="ring"></div>
-        <span>loading...</span>
-    </div>
     <!-- navigation bar -->
         <nav>
             <input type ="checkbox" id="check">
@@ -103,6 +98,7 @@
                                     <li>ICT NVQ level 4</li>
                                     <li>SQL - udemy.com</li>
                                     <li>CSS - udemy.com</li>
+                                    <li>Cyber Security - udemy.com</li>
                                     <li>Java intermidiate - sololearn.com</li>
                                     <li>Python - sololearn.com</li>
                                 </ul>
@@ -221,7 +217,13 @@
                     <i class="fa-solid fa-database"></i>
 
                     <br>
-                    <a href="#" target="_blank" class="project-link"> </i>Check it Out</a>
+                    <div class="projects-links">
+                        <a href="https://raisingminds.pythonanywhere.com/" target="_blank" class="project-link"> <i class="fas fa-globe"></i>
+                        </a><span> check it out </span>
+                        <a href="https://github.com/Coding-Hamsters/RaisingMinds" target="_blank" class="project-link"> <i class="fas fa fa-github"></i>
+                        </a> 
+                    </div> 
+
                 </div>
                 </div>
                 <div class="animation-box">
@@ -235,7 +237,12 @@
                     <i class="fas fa-brands fa-css3"></i>
                     <i class="fas fa-brands fa-js-square"></i>
                     <br>
-                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                    <div class="projects-links">
+                        <a href="https://raisingminds.pythonanywhere.com/" target="_blank" class="project-link"> <i class="fas fa-globe"></i>
+                        </a><span> check it out </span>
+                        <a href="https://github.com/Coding-Hamsters/RaisingMinds" target="_blank" class="project-link"> <i class="fas fa fa-github"></i>
+                        </a> 
+                    </div> 
                 </div>
                 </div>
                 <div class="animation-box">
@@ -244,14 +251,24 @@
                     <h3 class="project-title">Calculator</h3>
                     <p class="project-details">
                         basic calculator subrction,addtion,multipication,division
+                        
                 </p>
-                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                <i class="fas fa-brands fa-html5"></i>
+                <i class="fas fa-brands fa-css3"></i>
+                <i class="fas fa-brands fa-js-square"></i><br>
+                <div class="projects-links">
+                    <a href="#"  class="project-link"> <i class="fas fa-globe"></i>
+                    </a><span> check it out </span>
+                    <a href="#"  class="project-link"> <i class="fas fa fa-github"></i>
+                    </a> 
+                </div> 
                 </div>
                 </div>              
             </div>  
         </section><br><br><br><br><br><br>
         
 <!-- end of projects section -->
+        <!-- contact me section -->
 <p id="contact"></p>
         <section class="contact-me">
             <div class="contact-details">
@@ -283,7 +300,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form method="post">
+                    <form method="POST" action="https://formspree.io/f/xpzvande">
                         <h2>Send Message</h2>
                         <div class="inputBox">
                             <input type="text" name="name" required>
@@ -296,7 +313,7 @@
                         </div>
                         
                         <div class="inputBox">
-                            <textarea required></textarea>
+                            <textarea name="message" required></textarea>
                             <span>Type your Message...</span>
                         </div>
                         <div class="inputBox">
