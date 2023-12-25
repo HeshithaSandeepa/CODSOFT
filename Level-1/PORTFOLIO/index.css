@@ -131,21 +131,48 @@ nav ul li a.active:hover::after {
     margin-top: 10%;
 }
 
-#header{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    justify-content: space-between;
+#header {
     align-items: center;
     grid-gap: 1rem;
-    min-height:69vh;
+    min-height: 69vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.first-col {
+    display: grid;
+    flex-basis: 1%;
+}
+
+.second-col {
+    flex-basis: 45%;
+}
+
+.third-col {
+    flex-basis: 50%;
+}
+
+
+.icon-in-hero .social-media{
+    text-align: left !important;
+    justify-content: left;
+    display:grid !important;
+    padding: 0;
     
+}
+.icon-in-hero .social-media li{
+    justify-content: center;
+    margin-bottom: 8px;
 }
 .container2 .header p{
     font-size: 30px;
     transition: font-size 0.5s ease;
 }
 .container2 .header h1{
-    font-size: 45px;
+    font-size: 35px;
     transition: font-size 0.5s ease;
     
 }
@@ -785,26 +812,109 @@ footer{
     width: 100%;
     padding: 70px 30px 20px;
 }
-footer .soical-meida{
-    padding-top: 10px;
-    display: flex;
+.social-media{
+
+    padding: 20px 0;
+    display: flex !important;
+    display: block;
+    text-align: center;
+    align-self:center;
     justify-content: center;
-    margin-bottom: 20px;  
+    background: transparent;
 }
-footer .soical-meida a{
-    text-decoration:none;
-    padding: 12px;
-    background-color: #fff;
+.social-media li{
+    
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    position: relative;
+    display: flex;
+    color: gray;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    background: black;
+    line-height: 60px;
     border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin: 10px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
-footer .soical-meida a i{
-    font-size: 22px;
-    color:#000;
+.social-media li i{
+    text-align: center;
+}
+.social-media li:before{
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    transform: scale(0.9);
+    z-index: -1;
+    transition: .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.social-media li a{
+    text-decoration: none; 
+    color: inherit;
+}
+.social-media a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+.social-media li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-filter: blur(3px);
+}
+.social-media li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px black;
+}
+.social-media li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #1DA1F2;
+}
+.social-media li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+}
+.social-media li:nth-child(1):hover{
+    color:  black;
+    box-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px white
+}
+.social-media li:nth-child(2):hover{
+    color: #0077b5;
+    box-shadow: 0 0 15px #0077b5; 
+    text-shadow: 0 0 15px #0077b5;
+}
+.social-media li:nth-child(3):hover{
+    color: red;
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
 }
 footer .footernav ul{
     display: flex;
@@ -833,6 +943,23 @@ footer .footer-bottom{
     align-items: center;
     text-align: center;
     font-family: "Poppins";
+}
+
+/* CSS */
+.animate-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-down {
+    opacity: 1;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* -------------------end footer------------------------------*/
@@ -899,6 +1026,11 @@ footer .footer-bottom{
 @media (max-width: 852px){
     .checkbtn{
         display: block;
+    }
+    .icon-in-hero .social-media{
+        display: flex !important;
+        justify-content: center;
+        margin-top: 50%;
     }
 nav ul{
         position: fixed;
