@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="container">
+    <!-- preloader animation -->
+    <div class="center">
+        <div class="ring"></div>
+        <span>loading...</span>
+    </div>
     <!-- navigation bar -->
         <nav>
             <input type ="checkbox" id="check">
@@ -28,7 +33,7 @@
                 <li><a href="#top" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#section3">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#section4">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -56,7 +61,7 @@
 <!-- end header section --> 
 
 <!-- about section -->
-        <section id="about">
+        <section id="about" class="animated show">
             <h1>About <span class="title-color">Me</span></h1>
             <div class="about">
                 <div class="row">
@@ -111,8 +116,9 @@
         </section>
         <!-- end of about me section -->
 <!-- skills section -->
+<p id="section3"></p>
         <section class="skills"  id="skills">
-            <div class="head" id="section3">
+            <div class="head">
                 <h1>My <span class="title-color">Skills</span></h1>
             </div>
             <div class="inner">
@@ -197,6 +203,7 @@
         </section>
         <!--end of skills section ---->
 <!-- projects section -------->
+<p id="section4"></p>
         <section class="projects" id="projects">
             <h2 class="projects-title">My <span class="title-color">Projects</span></h2>
             <div class="projects-container">
@@ -243,8 +250,10 @@
                 </div>              
             </div>  
         </section><br><br><br><br><br><br>
+        
 <!-- end of projects section -->
-        <section class="contact-me" id="contact">
+<p id="contact"></p>
+        <section class="contact-me">
             <div class="contact-details">
                 <h2>Contact <span class="title-color">Me</span></h2>
                 <p>Your can esaly contact me using send an email</p>
@@ -310,7 +319,7 @@
                     <li><a href="#top" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#section3">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#section4">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -323,6 +332,7 @@
     </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="./index.js"></script>
 </body>
 </html>

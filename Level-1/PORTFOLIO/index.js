@@ -21,19 +21,18 @@ function validateForm() {
     }
 }
 
-document.getElementById('menu').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent the default behavior of the anchor tag
-
+document.getElementById('menu').addEventListener('click', function (activelink) {
+    activelink.preventDefault();
     // Remove the "active" class from all links
     let links = document.querySelectorAll('#menu a');
     links.forEach(function (link) {
         link.classList.remove('active');
     });
     // Add the "active" class to the clicked link
-    e.target.classList.add('active');
+    activelink.target.classList.add('active');
 
 
-    let targetId = e.target.getAttribute('href').substring(1);
+    let targetId = activelink.target.getAttribute('href').substring(1);
     //  add go to top of the page when click Home
     if (targetId === 'top') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -43,31 +42,9 @@ document.getElementById('menu').addEventListener('click', function (e) {
         });
     }
 });
-document.getElementById('menu').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent the default behavior of the anchor tag
-
-    // Remove the "active" class from all links
-    let links = document.querySelectorAll('#menu a');
-    links.forEach(function (link) {
-        link.classList.remove('active');
-    });
-    // Add the "active" class to the clicked link
-    e.target.classList.add('active');
-
-
-    let targetId = e.target.getAttribute('href').substring(1);
-    //  add go to top of the page when click Home
-    if (targetId === 'top') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-        document.getElementById(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-});
-
-document.getElementById('footer-menu').addEventListener('click', function (e) {
-    e.preventDefault();
+//****************************footer link with navigation bar***********************
+document.getElementById('footer-menu').addEventListener('click', function (activeLinkFooter) {
+    activeLinkFooter.preventDefault();
 
     // Remove the "active" class from all links in  the navigation bar and footer
     let allLinks = document.querySelectorAll('#menu a, #footer-menu a');
@@ -75,9 +52,9 @@ document.getElementById('footer-menu').addEventListener('click', function (e) {
         link.classList.remove('active');
     });
     // Add the "active" class
-    e.target.classList.add('active');
+    activeLinkFooter.target.classList.add('active');
 
-    let targetId = e.target.getAttribute('href').substring(1);
+    let targetId = activeLinkFooter.target.getAttribute('href').substring(1);
 
     // Add the "active" class to the similer link in the navigation bar
     let navLinkWithFooter= document.querySelector('#menu a[href="#' + targetId + '"]');
@@ -94,3 +71,4 @@ document.getElementById('footer-menu').addEventListener('click', function (e) {
         });
     }
 });
+
