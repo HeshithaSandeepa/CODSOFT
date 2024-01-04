@@ -1,7 +1,7 @@
 let value = '0';
 let resultValue;
 
-
+// add numbers to the disply
 function addNumber(digit) {
     if (!calculatorIsOn) return;
 
@@ -12,6 +12,7 @@ function addNumber(digit) {
     document.getElementById("display").innerHTML = value;
 }
 
+// erase display numbers one by one
 function erase() {
     if (!calculatorIsOn) return;
 
@@ -24,6 +25,7 @@ function erase() {
     }
 }
 
+// calculate results
 function result() {
     if (!calculatorIsOn) return;
 
@@ -35,6 +37,7 @@ function result() {
     }
 }
 
+// clear all things in display
 function allClear() {
     if (!calculatorIsOn) return;
 
