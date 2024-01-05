@@ -9,7 +9,9 @@ function addNumber(digit) {
         value = ''; 
     }
     value = value + digit;
+    const clickSound = document.getElementById('clickSound');
     document.getElementById("display").innerHTML = value;
+    clickSound.play();
 }
 
 // erase display numbers one by one
@@ -52,13 +54,19 @@ let calculatorIsOn = true;
 
 function turnOn() {
     calculatorIsOn = true;
-    document.getElementById('display').innerHTML = 0;
+    value = '0';
+    document.getElementById('display').innerHTML = value;
     document.querySelector('.display').classList.remove('off');
 }
 
 function turnOff() {
     calculatorIsOn = false;
-    document.getElementById('display').innerHTML = 0;
+    value = '0';
+    document.getElementById('display').innerHTML = value;
     document.querySelector('.display').classList.add('off');
 }
+
+
+
+
 
