@@ -17,13 +17,15 @@ function erase() {
     if (!calculatorIsOn) return;
 
     value = document.getElementById("display").innerHTML;
+
     erasedPre = value.slice(0, -1);
     if (erasedPre === '') {
-        document.getElementById('display').innerHTML = '0';
-    } else {
-        document.getElementById('display').innerHTML = erasedPre;
+        erasedPre = '0'; // Set to '0' if all characters are erased
     }
+    value = erasedPre;
+    document.getElementById('display').innerHTML = erasedPre;
 }
+
 
 // calculate results
 function result() {
@@ -50,11 +52,13 @@ let calculatorIsOn = true;
 
 function turnOn() {
     calculatorIsOn = true;
+    document.getElementById('display').innerHTML = 0;
     document.querySelector('.display').classList.remove('off');
 }
 
 function turnOff() {
     calculatorIsOn = false;
+    document.getElementById('display').innerHTML = 0;
     document.querySelector('.display').classList.add('off');
 }
 
