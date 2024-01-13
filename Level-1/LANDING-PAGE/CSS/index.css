@@ -1,0 +1,23 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+body {
+    font-family: poppins,sans-serif;
+}
+nav .navbar-brand {
+    color: white;
+}
+nav .nav-item a{
+    color:rgb(136, 130, 130);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+nav .nav-item a:hover{
+    color: white;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: rgb(211, 202, 202);
+}
