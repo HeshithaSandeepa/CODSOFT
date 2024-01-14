@@ -277,3 +277,19 @@ nav .nav-item a:hover,a:focus{
         width: 100%;
     }
 }
+@media (max-width: 372.9px) {
+    a.navbar-brand {
+        font-size: 100%;
+    }
+}
+@media (max-width: 270.9px) {
+    a.navbar-brand {
+        font-size: 90%;
+    }
+    button.navbar-toggler {
+        font-size: 10px;
+    }
+    .headings h2{
+        font-size:25px !important;
+}
+}
