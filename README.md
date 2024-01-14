@@ -1,39 +1,40 @@
 # CODSOFT
 
-<h1>Level 1</h1>
+## Level 1
 
-# LEVEL 1 -Task -1 Portfolio Website
-<a href="https://ibb.co/QDdvJmc"><img src="https://i.ibb.co/cYLhyTv/portfolio.png" alt="portfolio" border="0"></a>
-<h2>Technology Used</h2>
-<ul>
-<li>Html 5</li>
-<li>CSS</li>
-<li>Javascript</li>
-</ul>
+### Task 1: Portfolio Website
+![Portfolio](https://i.ibb.co/cYLhyTv/portfolio.png)
 
-<br>
+#### Technology Used
+- HTML 5
+- CSS
+- JavaScript
 
-# LEVEL 1 -Task -2 Landing Page
-<a href="https://ibb.co/x6ZXdDY"><img src="https://i.ibb.co/pdqb5xQ/landing-page.png" alt="landing-page" border="0"></a>
+---
 
-<h2>Technology Used</h2>
-<ul>
-<li>Html 5</li>
-<li>CSS</li>
-<li>Bootstarp</li>
-<li>Javascript</li>
-</ul>
+### Task 2: Landing Page
+![Landing Page](https://i.ibb.co/pdqb5xQ/landing-page.png)
 
-<br>
+#### Technology Used
+- HTML 5
+- CSS
+- Bootstrap
+- JavaScript
 
-# LEVEL 1 -Task -3 Calculator
-<img src="https://i.ibb.co/2SqrHHc/calculator1.png" alt="calculator1" border="0"></a>
+---
 
-<h2>Technology Used</h2>
-<ul>
-<li>Html 5</li>
-<li>CSS</li>
-<li>Javascript</li>
-</ul>
+### Task 3: Calculator
+![Calculator](https://i.ibb.co/2SqrHHc/calculator1.png)
 
-<br>
+#### Technology Used
+- HTML 5
+- CSS
+- JavaScript
+
+---
+
+This repository contains solutions for the Level 1 tasks in the CODSOFT program. Each task showcases the use of specific technologies to accomplish the given objectives.
+
+Feel free to explore each task folder for detailed implementation and code.
+
+For more information, visit the [CODSOFT GitHub Repository](https://github.com/HeshithaSandeepa/CODSOFT/tree/main).
