@@ -4,10 +4,17 @@
 
 
 body {
-    font-family: poppins,sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
+/*********************************************************************
+                            nav bar
+**********************************************************************/
+
 nav .navbar-brand {
     color: white;
+    font-size: 30px;
+    font-family:sans-serif;
+    font-weight: 900;
 }
 nav .nav-item a{
     color:rgb(136, 130, 130);
@@ -15,9 +22,258 @@ nav .nav-item a{
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: white;
 }
-nav .nav-item a:hover{
+nav .nav-item a:hover,a:focus{
     color: white;
 }
 .navbar-brand:focus, .navbar-brand:hover {
     color: rgb(211, 202, 202);
+}
+/*********************************************************************
+                            hero  section 
+**********************************************************************/
+.hero{
+    margin-top: 0 !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://e1.pxfuel.com/desktop-wallpaper/464/531/desktop-wallpaper-deus-computer-shop-background.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    height: 100vh; 
+}
+.headings{
+    padding-top: 20%;
+    width: 100%;
+
+}
+.headings h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/**********************************************************************************************
+                                            features  section  
+**********************************************************************************************/
+#features {
+    margin-top: 40px;
+}
+
+.Up{
+    z-index: 2;
+}
+
+#item1::before,#item2::before,#item3::before,#item4::before,
+#item5::before,#item6::before,#item7::before,#item8::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*Adjustthealpha(lastvalue)tocontroldarkness*/opacity: 0;
+    /*Initiallytransparent*/transition: opacity 0.3s ease;
+    /*Optional: Add a smooth transition effect */;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+
+}
+
+#item1:hover::before ,#item2:hover::before,#item3:hover::before,#item4:hover::before,
+#item5:hover::before,#item6:hover::before,#item7:hover::before,#item8:hover::before{
+    opacity: 1; 
+}
+#item1{
+    position: relative;
+    background-image:url(/images/lap.jpeg); 
+}
+
+#item2{
+    position: relative;
+    background-image:url(https://contentstatic.techgig.com/thumb/msid-88967885,width-800,resizemode-4/7-Laptop-accessories-every-programmer-must-buy-in-Amazon-Flipkart-sale.jpg?22510); 
+}
+#item3{
+    position: relative;
+    background-image:url(https://c1.wallpaperflare.com/preview/359/634/438/adult-computer-dark-desk.jpg); 
+}
+#item4{
+    position: relative;
+    background-image:url(https://media.cnn.com/api/v1/images/stellar/prod/210910130214-gaming-pcs.jpg?q=x_0,y_0,h_900,w_1599,c_fill/h_653,w_1160/f_webp); 
+}
+#item5{
+    position: relative;
+    background-image:url(https://i0.wp.com/darwinsden.com/wp-content/uploads/2015/08/CyberPowerUPSandAlmond.jpg?ssl=1); 
+}
+#item6{
+    position: relative;
+    background-image:url(https://bleuwire.com/wp-content/uploads/2019/01/Computer-Repair-miami.jpg); 
+}
+#item7{
+    position: relative;
+    background-image:url(https://www.tradeindia.com/_next/image/?url=https%3A%2F%2Ftiimg.tistatic.com%2Ffp%2F1%2F006%2F936%2Fblack-color-used-computer-068.jpg&w=384&q=15); 
+}
+#item8{
+    position: relative;
+    background-image:url(https://img.freepik.com/premium-photo/security-camera-wall-dark-room_862543-419.jpg?w=1060); 
+}
+
+.product-card {
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 350px;
+    width: 400px;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+    margin-bottom: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card a{
+    width: fit-content;
+}
+
+/************************************************************************
+                                pricing section
+***********************************************************************/
+
+#pricing {
+    margin-top: 40px;
+}
+/* #pricing .card:not(:first-child) {
+    margin-left: 20px;
+
+} */
+
+.card {
+    cursor: pointer;
+}
+.card img {
+    width: 380px;
+    height: 260px;
+}
+.card-group.card-group-scroll  .card {
+    flex-basis: 30%;
+}
+
+
+/*********************************************************************
+                            contact section 
+**********************************************************************/
+#Contact {
+    margin-top: 100px;
+}
+
+#Contact a {
+    text-decoration: none;
+    color: black;
+}
+/*********************************************************************
+                            gallery section 
+**********************************************************************/
+
+#Gallery {
+    margin-top: 60px;
+    margin-bottom:100px;
+}
+#Gallery h2 {
+    margin-bottom: 40px;
+}
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid black;
+    transition: 1.5;
+    -webkit-transition: 1.5;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+}
+.gallery img:hover {
+    box-shadow: 0 0 10px 0 rgb(41, 40, 40);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.gallery  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery  div  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.gallery .tall {
+    grid-row: span 2;
+}
+
+/*********************************************************************
+                            media Query
+**********************************************************************/
+@media (min-width: 576px) {
+    .card-group.card-group-scroll {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch; 
+    }
+    
+}
+@media (min-width: 992px) {
+    #navbarNav {
+        display: flex;
+        justify-content: end;
+    }
+    
+}
+@media (max-width: 992px) {
+    a.navbar-brand {
+        font-size: 150%;
+    }
+    
+}
+@media (max-width: 540px) {
+    div.headings {
+        padding-top: 50%;
+    }
+    img.card-img-top {
+    margin: auto;
+    }
+    div.headings button {
+        background-color: rgb(22, 22, 207);
+        color:white;
+    }
+    .headings h2{
+        font-size:35px;
+    }
+}
+@media (max-width: 430.9px) {
+    .headings h2{
+        font-size:35px;
+    }
+    .card img {
+        width: 100%;
+    }
 }

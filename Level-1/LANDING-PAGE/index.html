@@ -6,54 +6,401 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap CSS CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b92af0f76d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/index.css">
     <title>Landing Page</title>
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar bg-dark  border-body  navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand text-uppercase" href="#">Computer Sale</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Computer Soloutions</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                </ul>
-            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Gallery">Gallery</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <header>
-
-    </header>
-    <main>
         <section class="hero" style="height:100vh;">
-            </section>
-        <section class="features">
-            <h2>Featured Products</h2>
-            </section>
-        <section class="cta">
-            </section>
+            <div class="text-box container">
+                <div class="headings">
+                    <h2>Buy Trust Computers & computer parts<br> with Warranty</h2>
+                    <button type="button" class="btn btn-outline-primary btn-lg">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </header>
+<!-- main section -->
+    <main>
+  <!-- features section -->
+        <section  id="features" class="features container text-center">
+            <h2 class="text-center mb-5">Featured Products</h2>
+
+            <div class="row">
+              <!-- item 1 -->
+              <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div class="product-card" id="item1">
+                    <div class="Up">
+                      <h3>LAPTOP</h3>
+                      <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+                    </div>
+                      
+                  </div>
+              </div>
+              <!-- item 2 -->
+              <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                <div class="product-card " id="item2">
+                  <div class="Up">
+                    <h3>LAPTOP ACCESSORIES</h3>
+                    <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+                  </div>
+                </div>
+            </div>
+            <!-- item 3 -->
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+              <div class="product-card" id="item3">
+                <div class="Up">
+                  <h3>DESKTOP & ACCESSORIES</h3>
+                  <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+                </div>
+                
+              </div>
+          </div>
+          <!-- item 4 -->
+          <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+            <div class="product-card" id="item4">
+              <div class="Up">
+                <h3>WORKSTATION & GAMING PC</h3>
+                <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+              </div>
+            </div>
+        </div>
+        <!-- item 5 -->
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="product-card" id="item5">
+            <div class="Up">
+              <h3>UPS & NETWORK ITEMS</h3>
+              <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+            </div>
+          </div>
+        </div>
+      <!-- item 6 -->
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="product-card" id="item6">
+            <div class="Up">
+              <h3>COMPUTER REPAIR</h3>
+              <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+            </div>
+          </div>
+        </div>
+     <!-- item 7 -->
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="product-card" id="item7">
+            <div class="Up">
+              <h3>USED LAPTOP,COMPUTERS & OTHER ACESSORIES</h3>
+              <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+            </div>
+          </div>
+        </div>
+    <!-- item 8 -->
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="product-card" id="item8">
+            <div class="Up">
+              <h3>CCTV CAMERA & ACCESSORIES</h3>
+              <a href="#" class="btn btn-primary">VIEW MORE &gt&gt</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<!-- pricing section -->
+        <section id="pricing" class="pricing container">
+          <h2 class="text-center mb-5">Pricing</h2>
+        <div class="card-group card-group-scroll" >
+          <div class="card">
+              <img src="https://www.lenovo.com/medias/lenovo-laptops-ideapad-slim-3i-gen-8-15-intel-hero.png?context=bWFzdGVyfHJvb3R8MjYxMTk1fGltYWdlL3BuZ3xoNmYvaGJjLzE2Mjg5MjUyNDA5Mzc0LnBuZ3xkMjM5Y2YwZmRkZDU2YzQ1YTg1MDMyZjg2YjBmYTY1NGM5NjUzNzI5MWNmNTI0NjI4NjU2YmI2YzkzYWRhYzZl" class="card-img-top" alt="LAPTOPS"/>
+              <div class="card-body text-center">
+                  <h5 class="card-title">LAPTOPS</h5>
+                  <p>Starting from $199 <br>Warranty: 3 years</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">Stock avalible</small>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://www.lenovo.com/medias/lenovo-desktops-thinkcenter-neo-30a-22-gen-3-series.png?context=bWFzdGVyfHJvb3R8NDc4OTkwfGltYWdlL3BuZ3xoYTYvaDc0LzEzNDM4OTgyNjE5MTY2LnBuZ3w0ZDYyMTI3NDE2OWNhZjM4MGEwZmNiYWM4YThjOTBmNzVlNTczZGY5MjkxYjdmN2FmNzY2MmFhYTY2ODY3NTcy" class="card-img-top" alt="LAPTOPS"/>
+              <div class="card-body text-center">
+                  <h5 class="card-title">DESKTOPS</h5>
+                  <p>Starting from $199 <br>Warranty: 2 years</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Stock avalible</small>
+              </div>
+          </div>
+
+          <div class="card">
+              <img src="https://www.lenovo.com/medias/lenovo-laptops-thinkcentre-neo-50t-hero.png?context=bWFzdGVyfHJvb3R8MjQ2NzM1fGltYWdlL3BuZ3xoNGUvaDk2LzEzMTI1MDk1MzkxMjYyLnBuZ3wyZmRiMGNjNTJjZjQ4NDJmNzE0ZjMyZWQwZjczMTIzY2E0ZDhiM2VhNzBjY2U2YmIyZGQzYzMxNzFjYzM5ZDAw" class="card-img-top" alt="LAPTOPS"/>
+              <div class="card-body text-center text-center">
+                  <h5 class="card-title">GAMING PC FULL SET</h5>
+                  <p>Starting from $400 <br>Warranty: 4 years</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Stock avalible</small>
+              </div>
+          </div>
+
+          <div class="card">
+              <img src="https://static.lenovo.com/ww/img/series/think/p/lenovo-think-p-series-1.png" class="card-img-top" alt="LAPTOPS"/>
+              <div class="card-body text-center">
+                  <h5 class="card-title ">WORKSTATION</h5>
+                  <p>Starting from $1000 <br>Warranty: 2 years</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Stock avalible</small>
+              </div>
+          </div>
+
+        <div class="card">
+              <img src="https://www.lenovo.com/medias/lenovo-thinkpad-x1-tablet-front.png?context=bWFzdGVyfHJvb3R8MTYxNjJ8aW1hZ2UvcG5nfGg3My9oZDkvOTE5OTQ4MTcxNjc2Ni5wbmd8MGY3OGFjMTUzMGM0MTI1NWQ1MThiNTlhODhhYmRkODIzNTdlOTcwZGY4ZWFlODAzOTQ0Y2IzNGJmNzQ5OGM1MA&w=1920" class="card-img-top" alt="LAPTOPS"/>
+              <div class="card-body text-center">
+                  <h5 class="card-title">TABLETS</h5>
+                  <p>Starting from $499 <br>Warranty: 2 years</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Stock avalible</small>
+              </div>
+          </div>
+
+          
+        <div class="card">
+          <img src="https://www.kindpng.com/picc/m/4-49380_cctv-camera-system-png-transparent-png.png" class="card-img-top" alt="CCTV"/>
+          <div class="card-body text-center">
+              <h5 class="card-title">CCTV Camera Full Set</h5>
+              <p>Starting from $499 <br>Warranty: 2 years</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Stock avalible</small>
+          </div>
+      </div>
+      <div class="card">
+        <img src="https://www.tutorialspoint.com/communication_technologies/images/switches.jpg" class="card-img-top" alt="CCTV"/>
+        <div class="card-body text-center">
+            <h5 class="card-title">Network equipments</h5>
+            <p>Starting from $499 <br>Warranty: 2 years</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Stock avalible</small>
+        </div>
+    </div>
+          <div class="card">
+            <img src="https://img.freepik.com/premium-photo/view-more-icon-blue-background-3d-render-illustration_660343-10.jpg" class="card-img-top" alt="LAPTOPS"/>
+            <div class="card-body text-center">
+                <h5 class="card-title">View More Items</h5>
+                <p>Starting from $2 <br>Warranty: 1 year onwards</p>
+                <a href="#" class="btn btn-primary">View More</a>
+            </div>
+            
+        </div>
+      </div>
+      </section>
+      <!-- end pricing section -->
+
+<!-- contact section -->
+        <section id="Contact" class="Contact container">
+          <h2 class="text-center mb-5"Contact>Contact</h2>
+          <section id="landingContact" class="section-py bg-body landing-contact">
+            <div class="container">
+              <div class="row gy-4">
+                <!-- right side -->
+                <div class="col-lg-5">
+                  <div class="contact-img-box position-relative border p-2 h-100">
+                    <img src="https://img.freepik.com/free-photo/contact-register-feedback-support-help-concept_53876-124243.jpg?size=626&ext=jpg&ga=GA1.1.1482548361.1704244754&semt=ais" alt="contact" class="contact-img w-100 scaleX-n1-rtl img-fluid">
+                    <div class="pt-3 px-4 pb-1 mt-3">
+                      <div class="row gy-3 gx-md-4">
+                        <div class="col-md-6">
+                          <p class="text-bold">Email<br> 
+                            <i class="fa-solid fa-envelope"></i> <a href="mailto:hesithedg@gmail.com">hesithedg@gmail.com</a></p>
+                        </div>
+                        <div class="col-md-5">
+                          <p>phone<br>
+                              <i class="fa-solid fa-phone"></i><span id="phone-number">+94 766109604</span><br>
+                              <span id="copy-message" class="text-success"></span> </p>
+                      </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- message part -->
+    
+                <div class="col-lg-7">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="mb-1">Send a message</h4>
+                      <p class="mb-4">
+                        If you have any inquiries about our products, want to explore potential partnerships,<br class="d-none d-lg-block">
+                        or have questions before making a purchase, you've come to the right place.
+                    </p>
+                    
+                      <form action="POST">
+                        <div class="row g-4">
+                          <div class="col-md-6">
+                            <label class="form-label" for="contact-form-fullname">Full Name</label>
+                            <input type="text" class="form-control" id="contact-form-fullname" placeholder="Heshitha Sandeepa" required>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="contact-form-email">Email</label>
+                            <input type="text" id="contact-form-email" class="form-control" placeholder="hesithedg@gmail.com" required>
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label" for="contact-form-message">Message</label>
+                            <textarea id="contact-form-message" class="form-control" rows="9" placeholder="Write a message" required></textarea>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- end message part -->
+              </div>
+            </div>
+          </section>
+    </section>
+              
+<!-- gallery section -->
+<section id="Gallery" class="Gallery container">
+  <h2 class="text-center">Gallery</h2>
+  <div class="gallery">
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1662274195_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+      <img src="https://www.tulipcom.lk/public/dbimages/product/1691903654_pdt_1.jpg">
+  </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1685816401_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1685818435_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1671781431_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1701153771_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1673763256_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1686200887_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640716142_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640102845_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640332457_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640717133_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640799292_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640628648_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640720758_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://nextups.eu/wp-content/uploads/2023/10/6-10ks-side.png">
+    </div>
+    <div class="grid-item">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1636537170_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1690698624_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1636304795_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640000988_pdt_1.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://www.tulipcom.lk/public/dbimages/product/1640759079_pdt_1.jpg">
+    </div>
+    <div class="image-container tall">
+        <img src="https://m.media-amazon.com/images/I/81gjeuJdkjL.SS700.jpg">
+    </div>
+    <div class="image-container">
+        <img src="https://hikvisionsolution.com/wp-content/uploads/2023/06/Hikvision-Smart-Hybrid-Dual-Light-CCTV-Security-7-Camera-self-installation-Packages-300x300.jpg.webp">
+    </div>
+    <div class="image-container">
+        <img src="./images/lap.jpeg">
+    </div>
+    <div class="image-container">
+        <img src="https://static.lenovo.com/ww/img/series/think/p/lenovo-think-p-series-1.png">
+    </div>
+</div>
+</section>
+
+
+        <!-- end gallery section-->
     </main>
 
-    <footer>
-        <p>&copy; 2024 Landing page</p>
-    </footer>
+ <!-- footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#Contact" class="nav-link px-2 text-muted">Contact</a></li>
+          <li class="nav-item"><a href="#Gallery" class="nav-link px-2 text-muted">Gallery</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2024 Landing page Design by Heshitha</p>
+      </footer>
+    </div>
     <!-- bootstrap JS CDN link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script src="./JS/script.js"></script>
+
+  </body>
 </body>
 </html>
